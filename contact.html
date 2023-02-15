@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jai Ambe Electrical</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader"><img class="load" src="images/logo.jpg"><div class="progress"></div></div>
+
+<div style="display:none;" id="myDiv">
+<nav>
+         <div class="logo">
+           <img class="logo" src="images/logo1.jpg">
+           </div>
+         <input type="checkbox" id="click">
+         <label for="click" class="menu-btn">
+         <i class="fas fa-bars"></i>
+         </label>
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+         </ul>
+      </nav>
+            
+            <div class="content">
+<div class="heads">
+<img class="cont" src="images/contact.jpg">
+<div class="centered">Contact Us</div>
+</div>
+
+<h2>Contact Info</h2>
+
+<i  id="icon" class="fa-solid fa-map-marker-alt"></i>
+<h3>Office Address</h3>
+<p>Shop No. 14,Shradha Apt,Shivaji Nagar,Near Rajprabha,
+Golaninaka,Waliv,Vasai(E).
+Dist.Palghar 401208.
+</p>
+<br>
+<i  id="icon" class="fa-solid fa-envelope"></i>
+<h3>Email</h3>
+<p>santoshyadavgo132@gmail.com</p>
+<br>
+
+<i id="icon" class="fa-solid fa-mobile-phone"></i>
+<h3>Mobile</h3>
+<p>+91 9763351377 / +91 8421677592</p>
+
+<div class="contain">
+ <div class="wrapper">
+ <div class="contact">
+ <h2 class="contact-us">Get In Touch</h2>
+ <form  action="mail.php" method="post" id="contactForm" required>
+ <p class="name-field">
+ <label>First Name<span class="star">*</span></label>
+ <input type="text" name="name" id="name" required>
+ </p>
+ <p class="last-field">
+ <label>Last Name<span class="star">*</span></label>
+ <input type="text" name="last" id="last" required>
+ </p>
+ <p class="email-field">
+ <label>Email <span class="star">*</span></label>
+ <input type="email" name="email" id="email" required>
+ </p>
+ <p class="phone-field">
+ <label>Phone<span class="star">*</span></label>
+ <input type="text" name="phone" id="phone">
+ </p>
+  <p class="message-field full">
+ <label>Message</label>
+ <textarea name="message" rows="5" id="message"></textarea>
+ </p>
+ <p class="required-field">Required&nbsp;field <span class="star">*</span></p>
+ <p class="submit-button">
+ <input class="button" type="submit" value="Submit">
+ </p>
+ </form>
+ </div>
+ </div>
+ </div>
+ 
+ <div class="container3">
+ 
+ <div class="footer-contact">
+ <h3 class="footer-head"><img class="logo" src="images/logo1.jpg"></h3>
+ <p class="add">
+  <div class="text-bot"><h4>Our Address</h4></div>
+  <i class="fa-solid fa-map-marker-alt"></i> Shop No. 14,Shradha Apt,<br>Shivaji Nagar,Near Rajprabha,<br>Golaninaka,Waliv,Vasai(E).<br>Dist.Palghar 401208.<br>
+  <i class="fa-solid fa-mobile-phone"></i> +91 9763351377 / +91 8421677592<br>
+  <i class="fa-solid fa-envelope"></i> santoshyadavgo132@gmail.com<br>
+   </p>
+ </div>
+ 
+      <div class="footer-links">
+      <div class="text-bot"><h4>Useful Links</h4></div>
+      <ul>
+      <li><i class="fas fa-chevron-right"></i> <a href="index.html">Home</a></li>
+      <li><i class="fas fa-chevron-right"></i> <a href="product.html">Products</a></li>
+      <li><i class="fas fa-chevron-right"></i> <a href="gallery.html">Gallery</a></li>
+      <li><i class="fas fa-chevron-right"></i> <a href="about.html">About Us</a></li>
+      <li><i class="fas fa-chevron-right"></i> <a href="contact.html">Contact Us</a></li>
+      </ul>
+      </div>
+ 
+ 
+ <div class="footer-links">
+ <div class="text-bot"><h4>Our Social Networks</h4></div>
+ 
+ <div class="social">
+ <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+ <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+ <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
+ <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+ </div>
+ </div>
+ </div>
+ <br>
+ <br>
+ <br> 
+ <footer>© Jai Ambe Electrical | All Rights Reserved 2023</footer>            
+ 
+ </div>
+ </div>
+ <script src="script.js"></script>
+ <script src="js/loader.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script>
+ AOS.init();    
+ 
+ function reInitCount(){
+ $(".stat-count").each(function() {
+ $(this).html('0');
+ count($(this));
+ });
+ }
+ 
+ function count($this) {
+ var current = parseInt($this.html(), 10);
+ current = current + 1;
+ $this.html(++current);
+ if (current > $this.data('count')) {
+ $this.html($this.data('count'));
+ } else {
+ setTimeout(function() {
+ count($this)
+ }, 1);
+ }
+ }
+ 
+ reInitCount();
+ 
+ 
+ $(window).scroll(function (event) {
+ var scroll = $(window).scrollTop();
+ if(scroll == 0)
+ setTimeout(function(){reInitCount();},500);
+ 
+ 
+ });
+ 
+ </script>
+ 
+ 
+ </body>
+ </html>

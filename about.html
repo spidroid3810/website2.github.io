@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jai Ambe Electrical</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader"><img class="load" src="images/logo.jpg"><div class="progress"></div></div>
+
+<div style="display:none;" id="myDiv">
+<nav>
+         <div class="logo">
+           <img class="logo" src="images/logo1.jpg">
+           </div>
+         <input type="checkbox" id="click">
+         <label for="click" class="menu-btn">
+         <i class="fas fa-bars"></i>
+         </label>
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+         </ul>
+      </nav>
+            
+            <div class="content">
+<div class="heads">
+<img class="cont" src="images/about.jpg">
+<div class="centered">About Us</div>
+</div>
+
+<h2 class="head">About us</h2>
+<p>
+Established in the year 2006 at 'Vasai East, Vasai Virar, Thane, Maharashtra, We''Jai Ambe Electrical” are a Proprietorship Firm, engaged as the foremost, Manufacturer Of Control Panel, Remote Control Panel, Power Socket, lift Control Panel,Hydraulic Control Panel, APFC Control Panel ,Meter Panel Board and many more types of Control Panels.
+Enclosed here with complete set of literatures of our 
+products. Please ask for more details on the product of your 
+interest.
+We trust you will find our products sutiable to your 
+application and favor us your valued enquiries for these 
+items.
+</p>
+<h2 class="head2">OBJECTIVE AND FOCUS</h2>
+<p>We bench mark the best product in the market and follow 
+the same standards to give our customers the
+best with cost efficient and courteous after sales team which 
+helps us maintain our relationship with our customers.
+We use state of the art technology to get the best output. We 
+follow all the quality measure necessary to give the best
+service to our customers.
+</p>
+<h2 class="head2">OUR PEOPLE</h2>
+<p>We have a strong team of qualified, experienced and 
+efficient staff to give us the quality product which allows us 
+to 
+maintain a foot-hold in the very competitive
+industry and our price which are below most at the quality of 
+products that we offer are set to make us a long-term and 
+large player in this market.
+we have a warehouse 
+of all types of material. We are a team & dedicated to our
+customers services satisfaction. To resolve their complaints 
+on an earliest possible basis. 
+WE ARE ENSURE TO CHANGE YOUR VIEW OF SERVICE.
+</p>            
+            
+            
+            
+            
+            
+      <div class="container3">
+      
+      <div class="footer-contact">
+      <h3 class="footer-head"><img class="logo" src="images/logo1.jpg"></h3>
+      <p class="add">
+      <div class="text-bot"><h4>Our Address</h4></div>
+      <i class="fa-solid fa-map-marker-alt"></i> Shop No. 14,Shradha Apt,<br>Shivaji Nagar,Near Rajprabha,<br>Golaninaka,Waliv,Vasai(E).<br>Dist.Palghar 401208.<br>
+      <i class="fa-solid fa-mobile-phone"></i> +91 9763351377 / +91 8421677592<br>
+      <i class="fa-solid fa-envelope"></i> santoshyadavgo132@gmail.com<br>
+       </p>
+      </div>
+      
+     <div class="footer-links">
+     <div class="text-bot"><h4>Useful Links</h4></div>
+     <ul>
+     <li><i class="fas fa-chevron-right"></i> <a href="index.html">Home</a></li>
+     <li><i class="fas fa-chevron-right"></i> <a href="product.html">Products</a></li>
+     <li><i class="fas fa-chevron-right"></i> <a href="gallery.html">Gallery</a></li>
+     <li><i class="fas fa-chevron-right"></i> <a href="about.html">About Us</a></li>
+     <li><i class="fas fa-chevron-right"></i> <a href="contact.html">Contact Us</a></li>
+     </ul>
+     </div>
+      
+      
+      <div class="footer-links">
+      <div class="text-bot"><h4>Our Social Networks</h4></div>
+      
+      <div class="social">
+      <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+      <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
+      <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+      </div>
+      </div>
+      <br>
+      <br>
+      <br> 
+      <footer>© Jai Ambe Electrical | All Rights Reserved 2023</footer>            
+      
+      </div>
+      </div>
+      <script src="script.js"></script>
+      <script src="js/loader.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+      AOS.init();    
+      
+      function reInitCount(){
+      $(".stat-count").each(function() {
+      $(this).html('0');
+      count($(this));
+      });
+      }
+      
+      function count($this) {
+      var current = parseInt($this.html(), 10);
+      current = current + 1;
+      $this.html(++current);
+      if (current > $this.data('count')) {
+      $this.html($this.data('count'));
+      } else {
+      setTimeout(function() {
+      count($this)
+      }, 1);
+      }
+      }
+      
+      reInitCount();
+      
+      
+      $(window).scroll(function (event) {
+      var scroll = $(window).scrollTop();
+      if(scroll == 0)
+      setTimeout(function(){reInitCount();},500);
+      
+      
+      });
+      
+      
+        
+      </script>
+      
+           
+</body>
+</html>
