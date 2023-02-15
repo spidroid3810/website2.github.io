@@ -96,7 +96,9 @@ nav ul li a{
   letter-spacing: 1px;
   transition: all 0.3s ease;
 }
-nav ul li a.active,
+nav ul li a.active{
+color: #fff;
+}
 nav ul li a:hover{
   color: #111;
   background: #FFD700;
@@ -758,7 +760,7 @@ margin-top:5px;
 
 .load{
 position:absolute;
-top:47%;
+top:43%;
 left:50%;
 transform:translate(-50%,-50%);
 height: auto;
