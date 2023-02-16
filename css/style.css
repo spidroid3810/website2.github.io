@@ -18,6 +18,22 @@ color: #111;
  background: red;
  }
 
+.ring{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+width: 300px;
+height: 300px;
+border: 5px solid #ffd700;
+border-radius:100%;
+background:transparent;
+box-shadow: 0 0 0 0 #ffd700;
+animation:pl1 1s infinite;
+}
+@keyframes pl1 {
+  100% {box-shadow: 0 0 0 30px #0000}
+}
 
 
  
@@ -27,7 +43,7 @@ top:50%;
 left:50%;
 transform:translate(-50%,-50%);
 height: auto;
-width: 240px; 
+width: 235px; 
 }
 
 #myDiv {
@@ -573,7 +589,7 @@ color: #191970;
 }
 
 h2{
-color: #fff;
+color: #111;
 }
 
 
