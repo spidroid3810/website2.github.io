@@ -79,8 +79,8 @@ nav ul li a{
 }
 nav ul li a.active,
 nav ul li a:hover{
-  color: #ffd700;
-  background: #eee;
+  color: #111;
+  background: #ffd700;
 }
 nav .menu-btn i{
   color: #fff;
@@ -691,6 +691,7 @@ margin-left: auto;
 margin-right: auto;
 border-radius:15px;
 margin-top:5px;
+background: #111;
 }
 
 .heads {
