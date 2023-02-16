@@ -12,41 +12,22 @@ body{
 color: #111;
 }
 
-#loader{
-width: 100%;
+ #loader{
+ width: 100%;
  height: 100vh;
  background: red;
- 
  }
-  
-  .progress {
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  width:120px;
-  height:24px;
-  -webkit-mask:
-  radial-gradient(circle closest-side,#000 94%,#0000) 0 0/25% 100%,
-  linear-gradient(#000 0 0) center/calc(100% - 12px) calc(100% - 12px) no-repeat;
-  background:
-  linear-gradient(#FFD700 0 0) 0/0% no-repeat
-  #ddd;
-  animation:p7 2s infinite linear;
-  }
-  @keyframes p7 {
-  100% {background-size:100%}
-  }
-  
 
 
+
+ 
 .load{
 position:absolute;
-top:35%;
+top:50%;
 left:50%;
 transform:translate(-50%,-50%);
 height: auto;
-width: 240px;
+width: 240px; 
 }
 
 #myDiv {
@@ -96,12 +77,10 @@ nav ul li a{
   letter-spacing: 1px;
   transition: all 0.3s ease;
 }
-nav ul li a.active{
-color: #fff;
-}
+nav ul li a.active,
 nav ul li a:hover{
-  color: #111;
-  background: #FFD700;
+  color: #ffd700;
+  background: #eee;
 }
 nav .menu-btn i{
   color: #fff;
@@ -133,7 +112,7 @@ input[type="checkbox"]{
     position: fixed;
     top: 80px;
     right: -100%;
-    background: #FFD700;
+    background: #eee;
     height: 100vh;
     width: 100%;
     text-align: center;
@@ -162,7 +141,7 @@ input[type="checkbox"]{
   nav ul li a.active,
   nav ul li a:hover {
     background: none;
-    color: red;
+    color: #ffd700;
   }
   
 }
@@ -200,7 +179,7 @@ color: #111;
 	width: auto;
 	padding: 16px;
 	margin-top: -22px;
-	color: white;
+	color: red;
 	font-weight: bold;
 	font-size: 18px;
 	transition: 0.6s ease;
@@ -217,7 +196,7 @@ color: #111;
 }
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-	background-color: rgba(0,0,0,0.8);
+	background-color: #ffd700;
 }
 /* Caption text */
 .text {
@@ -291,7 +270,6 @@ position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #eee; 
   color: #fff;
   text-align: center;
  height: 80px;
@@ -336,7 +314,7 @@ text-decoration:none;
 width: 100%;
 display: grid;
 padding: 20px;
-background: #FFD700;
+background: #eee;
 }
 
 .fab{
@@ -591,11 +569,11 @@ color: red;
 }
 
 h3{
-color: #FFD700;
+color: #191970;
 }
 
 h2{
-color: #111;
+color: #fff;
 }
 
 
@@ -676,7 +654,7 @@ background: #FFD700;
 
 .card_content {
  padding: 1.5rem;
- background: linear-gradient(#ffea00,red);
+ background: linear-gradient(#191970,red);
 }
 
 .card_title {
@@ -758,14 +736,25 @@ margin-top:5px;
  
 }
 
-.load{
-position:absolute;
-top:43%;
-left:50%;
-transform:translate(-50%,-50%);
+.cont{
+width: 350px;
 height: auto;
-width: 240px;
+border-top:5px solid #ffd700;
+border-right:5px solid #ffd700;
+border-bottom:5px solid red;
+border-left:5px solid red;
 }
+
+.prod{
+width: 350px;
+height: auto;
+border-top:5px solid #ffd700;
+border-right:5px solid #ffd700;
+border-bottom:5px solid red;
+border-left:5px solid red;
+}
+
+
 
 }
 
