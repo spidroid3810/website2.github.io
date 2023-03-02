@@ -30,21 +30,23 @@
 <h2 class="head">VFD Control Panel</h2>
 
 <div class="crd">
-<img class="prd" src="images/vfd1.jpg">
+<img id="myImage7" class="prd" src="images/vfd1.jpg">
 </div>
 <br>
 
+<div id="myImg">
 <div class="row">
   <div class="column">
-    <img src="images/vfd2.jpg"  style="width:100%">
+    <img class="images" onclick="vfd1();" src="images/vfd2.jpg"  style="width:100%">
   </div>
   <div class="column">
-    <img src="images/vfd1.jpg" style="width:100%">
+    <img class="images active7" onclick="vfd2();" src="images/vfd1.jpg" style="width:100%">
   </div>
   <div class="column">
-  <img src="images/vfd3.jpg" style="width:100%">
+  <img class="images" onclick="vfd3();" src="images/vfd3.jpg" style="width:100%">
   </div>
-</div>  
+</div> 
+</div> 
   
 
 <p>
@@ -63,7 +65,7 @@ Most of the industrial applications require variable speeds at peak load conditi
       <p class="add">
       <div class="text-bot"><h4>Our Address</h4></div>
       <i class="fa-solid fa-map-marker-alt"></i> Shop No. 14,Shradha Apt,<br>Shivaji Nagar,Near Rajprabha,<br>Golaninaka,Waliv,Vasai(E).<br>Dist.Palghar 401208.<br>
-      <i class="fa-solid fa-mobile-phone"></i> +91 9763351377 / +91 8421677592<br>
+      <i class="fa-solid fa-phone"></i> +91 9763351377 / +91 8421677592<br>
       <i class="fa-solid fa-envelope"></i> santoshyadavgo132@gmail.com<br>
        </p>
       </div>
@@ -98,7 +100,7 @@ Most of the industrial applications require variable speeds at peak load conditi
       
       </div>
       </div>
-      <script src="script.js"></script>
+      <script src="js/script.js"></script>
       <script src="js/loader.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -136,7 +138,15 @@ Most of the industrial applications require variable speeds at peak load conditi
       
       });
       
-      
+      var header = document.getElementById("myImg");
+      var btns = header.getElementsByClassName("images");
+      for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active7");
+      current[0].className = current[0].className.replace(" active7", "");
+      this.className += " active7";
+      });
+      }
         
       </script>
       

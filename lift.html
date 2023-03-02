@@ -30,18 +30,20 @@
 <h2 class="head">Lift Control Panel</h2>
 
 <div class="crd">
-<img class="prd" src="images/lift1.jpg">
+<img id="myImage1" class="prd" src="images/lift1.jpg">
 </div>
 <br>
 
+<div id="myImg">
 <div class="row">
   <div class="column2">
-    <img src="images/lift1.jpg" style="width:100%">
+    <img class="images active1" onclick="lift1();" src="images/lift1.jpg" style="width:100%">
   </div>
   <div class="column2">
-    <img src="images/lift2.jpg" style="width:100%">
+    <img class="images" onclick="lift2();" src="images/lift2.jpg" style="width:100%">
   </div>
-  
+ </div> 
+</div>
 
 <p>
 An Lift controller is a system to control the lifts and the lift control panel is a cabin that holds all of the components to control the lift.
@@ -63,7 +65,7 @@ Programs of optimizing and controlling the operations of the elements.
       <p class="add">
       <div class="text-bot"><h4>Our Address</h4></div>
       <i class="fa-solid fa-map-marker-alt"></i> Shop No. 14,Shradha Apt,<br>Shivaji Nagar,Near Rajprabha,<br>Golaninaka,Waliv,Vasai(E).<br>Dist.Palghar 401208.<br>
-      <i class="fa-solid fa-mobile-phone"></i> +91 9763351377 / +91 8421677592<br>
+      <i class="fa-solid fa-phone"></i> +91 9763351377 / +91 8421677592<br>
       <i class="fa-solid fa-envelope"></i> santoshyadavgo132@gmail.com<br>
        </p>
       </div>
@@ -98,7 +100,7 @@ Programs of optimizing and controlling the operations of the elements.
       
       </div>
       </div>
-      <script src="script.js"></script>
+      <script src="js/script.js"></script>
       <script src="js/loader.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -136,7 +138,15 @@ Programs of optimizing and controlling the operations of the elements.
       
       });
       
-      
+      var header = document.getElementById("myImg");
+      var btns = header.getElementsByClassName("images");
+      for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active1");
+      current[0].className = current[0].className.replace(" active1", "");
+      this.className += " active1";
+      });
+      }
         
       </script>
       

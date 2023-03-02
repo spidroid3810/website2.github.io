@@ -30,22 +30,27 @@
 <h2 class="head">FLP Control Panel</h2>
 
 <div class="crd">
-<img class="prd" src="images/flp2.jpg">
+<img id="myImage6" class="prd" src="images/flp2.jpg">
 </div>
 <br>
 
+<div id="myImg">
 <div class="row">
-  <div class="column">
-    <img src="images/flp3.jpg"  style="width:100%">
+<div class="column2">
+ <img class="images active6" onclick="flp4();" src="images/flp2.jpg" style="width:100%">
+ </div>
+ <div class="column2">
+  <img class="images" onclick="flp2();" src="images/flpremote1.jpg" style="width:100%">
+  </div>  
+ <div class="column2">
+  <img class="images" onclick="flp1();" src="images/flp3.jpg"  style="width:100%">
   </div>
-  <div class="column">
-    <img src="images/flpremote1.jpg" style="width:100%">
+  <div class="column2">
+  <img class="images" onclick="flp3();" src="images/flp4.jpg" style="width:100%">
   </div>
-  <div class="column">
-  <img src="images/flp4.jpg" style="width:100%">
-  </div>
+</div>
 </div> 
-
+  
 <p>
 Flame-proof panels are mostly used in the place where the concentration of flammable gases, vapors or dust occurs. Electrical equipment that must be installed in such conditions is specially designed with flame proof enclosure to ensure it does not initiate an explosion due to arcing contacts or high surface temperature of instrument. In Chemical, Food, Petrochemicals, Breweries or Pharmaceutical industries such flame proof panels are required. We manufacture all kinds of Flame-proof panel as per customer needs and install at safe location in plant. Our panels have various standards with low maintains .</p>
 <br>            
@@ -59,7 +64,7 @@ Flame-proof panels are mostly used in the place where the concentration of flamm
       <p class="add">
       <div class="text-bot"><h4>Our Address</h4></div>
       <i class="fa-solid fa-map-marker-alt"></i> Shop No. 14,Shradha Apt,<br>Shivaji Nagar,Near Rajprabha,<br>Golaninaka,Waliv,Vasai(E).<br>Dist.Palghar 401208.<br>
-      <i class="fa-solid fa-mobile-phone"></i> +91 9763351377 / +91 8421677592<br>
+      <i class="fa-solid fa-phone"></i> +91 9763351377 / +91 8421677592<br>
       <i class="fa-solid fa-envelope"></i> santoshyadavgo132@gmail.com<br>
        </p>
       </div>
@@ -94,7 +99,7 @@ Flame-proof panels are mostly used in the place where the concentration of flamm
       
       </div>
       </div>
-      <script src="script.js"></script>
+      <script src="js/script.js"></script>
       <script src="js/loader.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -131,6 +136,16 @@ Flame-proof panels are mostly used in the place where the concentration of flamm
       
       
       });
+      
+      var header = document.getElementById("myImg");
+      var btns = header.getElementsByClassName("images");
+      for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active6");
+      current[0].className = current[0].className.replace(" active6", "");
+      this.className += " active6";
+      });
+      }
       
       
         

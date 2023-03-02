@@ -30,19 +30,20 @@
 <h2 class="head">Hydraulic Control Panel</h2>
 
 <div class="crd">
-<img class="prd" src="images/hydraulic1.jpg">
+<img id="myImage2" class="prd" src="images/hydraulic1.jpg">
 </div>
 <br>
 
+<div id="myImg">
 <div class="row">
   <div class="column2">
-    <img src="images/hydraulic1.jpg"  style="width:100%">
+    <img class="images active2" onclick="hd1();" src="images/hydraulic1.jpg"  style="width:100%">
   </div>
   <div class="column2">
-    <img src="images/hydraulic2.jpg" style="width:100%">
+    <img class="images" onclick="hd2();" src="images/hydraulic2.jpg" style="width:100%">
   </div>
 </div>  
-  
+</div> 
 
 <p>
 Hydraulic control panels it is Designed to operate Valve actuators, BOP’s, Hydraulic Actuators and much more. The highly engineered equipment operates both offshore and onshore.The application is applicable in all power plants, Oil and Gas industry, Sugar factories, Textiles, Plastic Industry, etc.</p><br>
@@ -56,7 +57,7 @@ Hydraulic control panels it is Designed to operate Valve actuators, BOP’s, Hyd
       <p class="add">
       <div class="text-bot"><h4>Our Address</h4></div>
       <i class="fa-solid fa-map-marker-alt"></i> Shop No. 14,Shradha Apt,<br>Shivaji Nagar,Near Rajprabha,<br>Golaninaka,Waliv,Vasai(E).<br>Dist.Palghar 401208.<br>
-      <i class="fa-solid fa-mobile-phone"></i> +91 9763351377 / +91 8421677592<br>
+      <i class="fa-solid fa-phone"></i> +91 9763351377 / +91 8421677592<br>
       <i class="fa-solid fa-envelope"></i> santoshyadavgo132@gmail.com<br>
        </p>
       </div>
@@ -91,7 +92,7 @@ Hydraulic control panels it is Designed to operate Valve actuators, BOP’s, Hyd
       
       </div>
       </div>
-      <script src="script.js"></script>
+      <script src="js/script.js"></script>
       <script src="js/loader.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -129,6 +130,15 @@ Hydraulic control panels it is Designed to operate Valve actuators, BOP’s, Hyd
       
       });
       
+      var header = document.getElementById("myImg");
+      var btns = header.getElementsByClassName("images");
+      for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active2");
+      current[0].className = current[0].className.replace(" active2", "");
+      this.className += " active2";
+      });
+      }
       
         
       </script>

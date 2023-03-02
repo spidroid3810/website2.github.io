@@ -30,19 +30,20 @@
 <h2 class="head">Meter Panel Board</h2>
 
 <div class="crd">
-<img class="prd" src="images/meter2.jpg">
+<img id="myImage4" class="prd" src="images/meter2.jpg">
 </div>
 <br>
 
+<div id="myImg">
 <div class="row">
   <div class="column2">
-    <img src="images/meter1.jpg"  style="width:100%">
+    <img class="images" onclick="meter1();" src="images/meter1.jpg"  style="width:100%">
   </div>
   <div class="column2">
-    <img src="images/meter2.jpg" style="width:100%">
+    <img class="images active4" onclick="meter2();" src="images/meter2.jpg" style="width:100%">
   </div>
 </div>  
-  
+</div>
 
 <p>
 Meter Panel Board is used for monitoring of energy consumption level of commercial, residential and industrial buildings. Available in standard diameter, this three phase panel board has IP43 protection rating. Fully insulated housing of this product is completely protected against corrosion and high temperature.</p>
@@ -57,7 +58,7 @@ Meter Panel Board is used for monitoring of energy consumption level of commerci
       <p class="add">
       <div class="text-bot"><h4>Our Address</h4></div>
       <i class="fa-solid fa-map-marker-alt"></i> Shop No. 14,Shradha Apt,<br>Shivaji Nagar,Near Rajprabha,<br>Golaninaka,Waliv,Vasai(E).<br>Dist.Palghar 401208.<br>
-      <i class="fa-solid fa-mobile-phone"></i> +91 9763351377 / +91 8421677592<br>
+      <i class="fa-solid fa-phone"></i> +91 9763351377 / +91 8421677592<br>
       <i class="fa-solid fa-envelope"></i> santoshyadavgo132@gmail.com<br>
        </p>
       </div>
@@ -92,7 +93,7 @@ Meter Panel Board is used for monitoring of energy consumption level of commerci
       
       </div>
       </div>
-      <script src="script.js"></script>
+      <script src="js/script.js"></script>
       <script src="js/loader.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -130,6 +131,15 @@ Meter Panel Board is used for monitoring of energy consumption level of commerci
       
       });
       
+      var header = document.getElementById("myImg");
+      var btns = header.getElementsByClassName("images");
+      for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active4");
+      current[0].className = current[0].className.replace(" active4", "");
+      this.className += " active4";
+      });
+      }
       
         
       </script>

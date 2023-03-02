@@ -30,21 +30,25 @@
 <h2 class="head">FLP Control Panel</h2>
 
 <div class="crd">
-<img class="prd" src="images/Apfc.jpeg">
+<img id="myImage3" class="prd" src="images/Apfc.jpeg">
 </div>
 <br>
 
-<div class="row">
-  <div class="column">
-    <img src="images/apfc2.jpg"  style="width:100%">
+ <div id="myImg">
+ <div class="row">
+ <div class="column">
+ <img class="images active3" onclick="apfc1();" src="images/apfc2.jpg" style="width:100%">
+ </div>
+ <div class="column">
+ <img class="images" onclick="apfc2();" src="images/apfc3.jpg" style="width:100%">
+ </div>  
+ <div class="column">
+ <img class="images" onclick="apfc3();" src="images/Apfc.jpeg"  style="width:100%">
+ </div>
   </div>
-  <div class="column">
-    <img src="images/apfc3.jpg" style="width:100%">
-  </div>
-  <div class="column">
-  <img src="images/apfc.jpeg" style="width:100%">
-  </div>
-</div> 
+ </div> 
+
+
 
 <p>
 Automatic Power Factor Control or APFC Panels are mainly used for the improvement of Power Factor. Power Factor is the ratio of active power to apparent power and it is a major component in measuring electrical consumption. APFC is an automatic power factor control panel which is used to improve the power factor.</p><br>            
@@ -58,7 +62,7 @@ Automatic Power Factor Control or APFC Panels are mainly used for the improvemen
       <p class="add">
       <div class="text-bot"><h4>Our Address</h4></div>
       <i class="fa-solid fa-map-marker-alt"></i> Shop No. 14,Shradha Apt,<br>Shivaji Nagar,Near Rajprabha,<br>Golaninaka,Waliv,Vasai(E).<br>Dist.Palghar 401208.<br>
-      <i class="fa-solid fa-mobile-phone"></i> +91 9763351377 / +91 8421677592<br>
+      <i class="fa-solid fa-phone"></i> +91 9763351377 / +91 8421677592<br>
       <i class="fa-solid fa-envelope"></i> santoshyadavgo132@gmail.com<br>
        </p>
       </div>
@@ -92,7 +96,7 @@ Automatic Power Factor Control or APFC Panels are mainly used for the improvemen
       
       </div>
       </div>
-      <script src="script.js"></script>
+      <script src="js/script.js"></script>
       <script src="js/loader.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -130,6 +134,15 @@ Automatic Power Factor Control or APFC Panels are mainly used for the improvemen
       
       });
       
+      var header = document.getElementById("myImg");
+      var btns = header.getElementsByClassName("images");
+      for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active3");
+      current[0].className = current[0].className.replace(" active3", "");
+      this.className += " active3";
+      });
+      }
       
         
       </script>
