@@ -193,62 +193,41 @@ opacity: 0.6;
 }
 
 .active1, .images:hover {
-border-top: 5px solid red;
-border-right: 5px solid red;
 border-bottom: 5px solid #FFD700;
-border-left: 5px solid #FFD700;
 opacity: 1;
 }
 
 
 .active2, .images:hover {
-border-top: 5px solid red;
-border-right: 5px solid red;
 border-bottom: 5px solid #FFD700;
-border-left: 5px solid #FFD700;
 opacity: 1;
 }
 
 .active3, .images:hover {
-border-top: 5px solid red;
-border-right: 5px solid red;
 border-bottom: 5px solid #FFD700;
-border-left: 5px solid #FFD700;
 opacity: 1;
 }
 
 
 .active4, .images:hover {
-border-top: 5px solid red;
-border-right: 5px solid red;
 border-bottom: 5px solid #FFD700;
-border-left: 5px solid #FFD700;
 opacity: 1;
 }
 
 
 .active5, .images:hover {
-border-top: 5px solid red;
-border-right: 5px solid red;
 border-bottom: 5px solid #FFD700;
-border-left: 5px solid #FFD700;
 opacity: 1;
 }
 
 
 .active6, .images:hover {
-border-top: 5px solid red;
-border-right: 5px solid red;
 border-bottom: 5px solid #FFD700;
-border-left: 5px solid #FFD700;
 opacity: 1;
 }
 
 .active7, .images:hover {
-border-top: 5px solid red;
-border-right: 5px solid red;
 border-bottom: 5px solid #FFD700;
-border-left: 5px solid #FFD700;
 opacity: 1;
 }
 
@@ -848,6 +827,7 @@ border-left:5px solid #ffd700;
 border-right:5px solid red;
 border-bottom:5px solid red;
 margin-top:0;
+border-radius:30px;
 }
 
 .prod{
@@ -858,6 +838,7 @@ border-left:5px solid #ffd700;
 border-right:5px solid red;
 border-bottom:5px solid red;
 margin-top:0;
+border-radius:30px;
 }
 
 .heads {
@@ -874,19 +855,25 @@ margin-top:0;
 
 .column {
   float: left;
-  width: 33.33%;
+  width: 22.22%;
   padding: 5px;
 }
 
-.column2 {
-  float: left;
-  width: 50%;
-  padding: 10px;
-}
+
 
 /* Clearfix (clear floats) */
 .row::after {
   content: "";
   clear: both;
   display: table;
+}
+
+.row{
+background: #eee;
+width:80%;
+margin: auto;
+border-top:5px solid #ffd700;
+border-left:5px solid #ffd700;
+border-right:5px solid red;
+border-bottom:5px solid red;
 }
