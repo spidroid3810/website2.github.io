@@ -844,9 +844,9 @@ background: #111;
 width: 450px;
 height: auto;
 border-top:5px solid #ffd700;
-border-right:5px solid #ffd700;
+border-left:5px solid #ffd700;
+border-right:5px solid red;
 border-bottom:5px solid red;
-border-left:5px solid red;
 margin-top:0;
 }
 
@@ -854,20 +854,20 @@ margin-top:0;
 width: 450px;
 height: auto;
 border-top:5px solid #ffd700;
-border-right:5px solid #ffd700;
+border-left:5px solid #ffd700;
+border-right:5px solid red;
 border-bottom:5px solid red;
-border-left:5px solid red;
 margin-top:0;
 }
 
 .heads {
  height: 304px;
- background:#eee;
+ background:linear-gradient(to right,red,#ffd700);
 }
 
 .heads2 {
  height: 266px;
- background:#eee;
+ background:linear-gradient(to right,red,#ffd700);
 }
 
 }
