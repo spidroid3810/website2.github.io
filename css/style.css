@@ -827,7 +827,8 @@ border-left:5px solid #ffd700;
 border-right:5px solid red;
 border-bottom:5px solid red;
 margin-top:0;
-border-radius:30px;
+border-top-left-radius:30px;
+border-bottom-right-radius:30px;
 }
 
 .prod{
@@ -838,7 +839,8 @@ border-left:5px solid #ffd700;
 border-right:5px solid red;
 border-bottom:5px solid red;
 margin-top:0;
-border-radius:30px;
+border-top-left-radius:30px;
+border-bottom-right-radius:30px;
 }
 
 .heads {
