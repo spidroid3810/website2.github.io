@@ -395,14 +395,15 @@ background: red;
 
 .fab{
 display:inline;
-background: #fff;
-height: 40px;
-width: 40px;
+background: red;
+height: 45px;
+width: 45px;
 border-radius:100%;
-font-size:20px;
-color: red;
+font-size:22px;
+color: #fff;
 padding: 10px;
 text-align:center;
+border: 2px solid #fff;
 }
 
 label{
@@ -871,13 +872,6 @@ border-bottom-right-radius:30px;
 }
 
 .row{
-background: #eee;
-width:80%;
+width:100%;
 margin: auto;
-border-top:5px solid #ffd700;
-border-left:5px solid #ffd700;
-border-right:5px solid red;
-border-bottom:5px solid red;
-border-top-left-radius:10px;
-border-bottom-right-radius:10px;
 }
