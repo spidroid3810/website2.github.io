@@ -187,6 +187,63 @@ p{
 color: #111;
 }
 
+.images{
+border: none;
+}
+
+.active1, .images:hover {
+border-top: 5px solid red;
+border-right: 5px solid red;
+border-bottom: 5px solid #FFD700;
+border-left: 5px solid #FFD700;
+}
+
+
+.active2, .images:hover {
+border-top: 5px solid red;
+border-right: 5px solid red;
+border-bottom: 5px solid #FFD700;
+border-left: 5px solid #FFD700;
+}
+
+.active3, .images:hover {
+border-top: 5px solid red;
+border-right: 5px solid red;
+border-bottom: 5px solid #FFD700;
+border-left: 5px solid #FFD700;
+}
+
+
+.active4, .images:hover {
+border-top: 5px solid red;
+border-right: 5px solid red;
+border-bottom: 5px solid #FFD700;
+border-left: 5px solid #FFD700;
+}
+
+
+.active5, .images:hover {
+border-top: 5px solid red;
+border-right: 5px solid red;
+border-bottom: 5px solid #FFD700;
+border-left: 5px solid #FFD700;
+}
+
+
+.active6, .images:hover {
+border-top: 5px solid red;
+border-right: 5px solid red;
+border-bottom: 5px solid #FFD700;
+border-left: 5px solid #FFD700;
+}
+
+.active7, .images:hover {
+border-top: 5px solid red;
+border-right: 5px solid red;
+border-bottom: 5px solid #FFD700;
+border-left: 5px solid #FFD700;
+}
+
 #slide{
 	width:100%;
 	}
@@ -302,11 +359,11 @@ position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
-  color: #fff;
+  color: #111;
   text-align: center;
  height: 80px;
  padding: 20px;
- background: red;
+ background: #eee;
 }
 
 .footer-head{
@@ -315,7 +372,7 @@ color:red;
 
 .footer-contact{
 text-align:left;
-color: #111;
+color: #fff;
 }
 
 .footer-links{
@@ -328,35 +385,35 @@ display: block;
 }
 
 .fas{
-color: red;
+color: #ffd700;
 }
 
 .footer-links ul li a{
-color: #111;
+color: #fff;
 text-decoration:none;
 }
 
 .text-bot{
  font-size:16px;
  font-weight:500;
- color: red;
+ color: #ffd700;
 }
 
 .container3{
 width: 100%;
 display: grid;
 padding: 20px;
-background: #eee;
+background: red;
 }
 
 .fab{
 display:inline;
-background: red;
+background: #fff;
 height: 40px;
 width: 40px;
 border-radius:100%;
 font-size:20px;
-color: #fff;
+color: red;
 padding: 10px;
 text-align:center;
 }
@@ -378,9 +435,6 @@ ul {
 list-style: none;
 padding: 0;
 }
-
-
-
 
 .wrapper {
 background: #fff;
@@ -601,7 +655,7 @@ color: red;
 }
 
 h3{
-color: #191970;
+color: red;
 }
 
 h2{
@@ -742,7 +796,6 @@ background: #111;
  font-weight: 700;
  color: #fff;
  text-shadow: 0 2px red , 0 2px red; 
- 
 }
 
 .crds {
