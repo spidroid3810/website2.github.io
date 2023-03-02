@@ -85,7 +85,7 @@ var swiper = new Swiper(".slide-content", {
   
   document.getElementById('myImage3')
   
-  .src="images/apfc.jpeg";  
+  .src="images/Apfc.jpeg";  
   
   }
   
