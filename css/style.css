@@ -395,15 +395,14 @@ background: red;
 
 .fab{
 display:inline;
-background: red;
-height: 45px;
-width: 45px;
+background: #fff;
+height: 40px;
+width: 40px;
 border-radius:100%;
-font-size:22px;
-color: #fff;
+font-size:20px;
+color: red;
 padding: 10px;
 text-align:center;
-border: 2px solid #fff;
 }
 
 label{
