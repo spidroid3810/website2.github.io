@@ -853,6 +853,10 @@ border-bottom-right-radius:30px;
  background:linear-gradient(to right,red,#ffd700);
 }
 
+.container3 { grid-template-columns: repeat(2, 1fr); }
+
+
+
 }
 
 .column {
