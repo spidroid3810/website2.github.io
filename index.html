@@ -9,7 +9,9 @@
 <!-- Swiper CSS -->
 <link rel="stylesheet" href="css/swiper-bundle.min.css">
 <link rel="stylesheet" href="css/slide.css">
-              
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
@@ -36,22 +38,23 @@
       </nav>
             
             <div class="content" >
-                    <div id="slide">
-                    <div class="slideshow-container">
-                    <div class="mySlides fade"> <img class="imgs" src="images/apfc2.jpg" > </div>
-                    <div class="mySlides fade"> <img class="imgs" src="images/vfd3.jpg" > </div>
-                    <div class="mySlides fade"> <img class="imgs" src="images/pl4.jpg" > </div>
-                    <div class="mySlides fade"> <img class="imgs" src="images/remote1.jpg" ></div>
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                    <a style="padding:2px;border: 5px solid #fff;border-radius: 10px;box-shadow: 0 2px red;" href="gallery.html" class="centered" >view more</a></div>
-                    
-                    <div style="text-align:center"> 
-                    <span class="dot" onclick="currentSlide(1)"></span> 
-                    <span class="dot" onclick="currentSlide(2)"></span> 
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                    <span class="dot" onclick="currentSlide(4)"></span>
-                    </div>
-            
+                            <div class="wrap">
+                            <div class="carousel owl-carousel">
+                            <div class="card card-1">
+                            <img src="images/apfc2.jpg">
+                            </div>
+                            <div class="card card-2">
+                            <img src="images/vfd3.jpg">
+                            </div>
+                            <div class="card card-3">
+                            <img src="images/pl4.jpg">
+                            </div>
+                            <div class="card card-4">
+                            <img src="images/remote1.jpg">
+                            </div>
+                            </div>
+                            </div>
+                            <br>   
                      <h2 class="head">Our Products</h2>
                      
                      <div class="slide-container swiper" >
@@ -173,13 +176,7 @@
                      <div class="swiper-button-prev swiper-navBtn"></div>
                      <div class="swiper-pagination"></div>
                      </div>
-                     
-                     
-                     
-                     
-                     
-                     
-            
+                                 
 <h2 class="head" >About us</h2>
 <p>Established in the year 2006 at 'Vasai East, Vasai Virar, Thane, Maharashtra, We''Jai Ambe Electrical” are a Proprietorship Firm, engaged as the foremost, Manufacturer Of Control Panel, Remote Control Panel, Power Socket and many more
 </p>
@@ -269,59 +266,7 @@
       
       
       });
-      
-      
-      var slideIndex = 0;
-      showSlides();
-      var slides,dots;
-      
-      function showSlides() {
-      var i;
-      slides = document.getElementsByClassName("mySlides");
-      dots = document.getElementsByClassName("dot");
-      for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-      }
-      slideIndex++;
-      if (slideIndex> slides.length) {slideIndex = 1}    
-      for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
-      setTimeout(showSlides, 6000); // Change image every 8 seconds
-      }
-      
-      function plusSlides(position) {
-      slideIndex +=position;
-      if (slideIndex> slides.length) {slideIndex = 1}
-      else if(slideIndex<1){slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-      }
-      for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
-      }
-      
-      function currentSlide(index) {
-      if (index> slides.length) {index = 1}
-      else if(index<1){index = slides.length}
-      for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-      }
-      for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[index-1].style.display = "block";  
-      dots[index-1].className += " active";
-      }
-      
-    
-     
-    
+         
       </script>
       
            
