@@ -201,7 +201,7 @@ var swiper = new Swiper(".slide-content", {
             nav: false
             },
             600:{
-            items:2,
+            items:3,
             nav: false
             },
             1000:{
