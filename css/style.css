@@ -766,10 +766,7 @@ border-bottom-right-radius:30px;
 
 }
 
-/* Screen larger than 900px? 3 columns */
-@media (min-width: 900px) {
-  .card-con { grid-template-columns: repeat(3, 1fr); }
-}
+
 
 .column {
   float: left;
@@ -801,7 +798,7 @@ margin: auto;
 .cardss {
  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.50);
  max-width: 300px;
- margin: 10px 30px;
+ margin: 10px 20px;
  text-align: center;
  font-family: arial;
  background:linear-gradient(to right,red,#ffd700);
