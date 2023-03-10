@@ -63,12 +63,13 @@
 .card-image .card-img{
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 10%;
   border: 5px solid #eee;
+  background: #fff;
 }
 .name{
-  font-size: ;
+  font-size: 20px;
   font-weight: 500;
   color: #fff;
 }
