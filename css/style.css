@@ -801,7 +801,7 @@ margin: auto;
 .cardss {
  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.50);
  max-width: 300px;
- margin: 10px 20px;
+ margin:10px 20px;
  text-align: center;
  font-family: arial;
  background:linear-gradient(to right,red,#ffd700);
@@ -847,7 +847,7 @@ margin: 10px;
 
 .card-con{
  max-width: 1200px;
- margin: 15px auto;
+ margin: 15px;
  display: grid;
  gap: 1rem;
  }
