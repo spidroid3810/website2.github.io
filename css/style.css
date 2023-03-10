@@ -766,7 +766,10 @@ border-bottom-right-radius:30px;
 
 }
 
-
+/* Screen larger than 900px? 3 columns */
+@media (min-width: 900px) {
+  .card-con { grid-template-columns: repeat(3, 1fr); }
+}
 
 .column {
   float: left;
