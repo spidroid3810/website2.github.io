@@ -177,7 +177,7 @@ var swiper = new Swiper(".slide-content", {
   
   document.getElementById('myImage7')
   
-  .src="images/vfd1.jpg";  
+  .src="images/vfd1.png";  
   
   }
   
@@ -211,3 +211,24 @@ var swiper = new Swiper(".slide-content", {
             }
             });
     
+    $(".carousel2").owlCarousel({
+    margin: 0,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 4000,
+    autoplayHoverPause: true,
+    responsive: {
+    0:{
+    items:1,
+    nav: false
+    },
+    600:{
+    items:2,
+    nav: false
+    },
+    1000:{
+    items:3,
+    nav: false
+    }
+    }
+    });
