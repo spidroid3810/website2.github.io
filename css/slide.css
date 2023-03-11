@@ -15,7 +15,7 @@
 }
 .card{
   border-radius: 25px;
-  background-color: red;
+  background-color:#eee;
 }
 .image-content,
 .card-content{
@@ -35,7 +35,7 @@
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: #eee;
+  background: linear-gradient(to right,red,#ffd700);
   border-radius: 25px 25px 0 25px;
 }
 .overlay::before,
@@ -46,18 +46,19 @@
   bottom: -40px;
   height: 40px;
   width: 40px;
-  background-color: #eee;
+  background: #ffd700;
+  
 }
 .overlay::after{
   border-radius: 0 25px 0 0;
-  background-color: red;
+  background-color: #eee;
 }
 .card-image{
   position: relative;
   height: 250px;
   width: 250px;
   border-radius: 10%;
-  background: red;
+  background: linear-gradient(to right,#ffd700,red);
   padding: 3px;
 }
 .card-image .card-img{
@@ -65,13 +66,13 @@
   width: 100%;
   object-fit: contain;
   border-radius: 10%;
-  border: 5px solid #eee;
+  border: 3px solid #eee;
   background: #fff;
 }
 .name{
   font-size: 20px;
-  font-weight: 500;
-  color: #fff;
+  font-weight: 600;
+  color: #111;
 }
 .description{
   font-size: 14px;
