@@ -30,20 +30,22 @@ color: #111;
   position: absolute;
   width: 300px;
   height: 300px;
-  border-radius: 50%;
   animation: ring 2s linear infinite;
-  border-left: 10px solid #ffd700;
-  border-top: 10px solid #fff000;
-  border-right: 10px solid #ffd700;
-   border-bottom: 10px solid #fff000;
-  box-shadow: 0px 0px 100px #fff000;
+  background: red;
+  border-radius:50%;
+  box-shadow: 0 0 100px #fff000;
+  border-left: 10px solid #fff000;
+  border-right: 10px solid #fff000;
+  border-top: 10px solid #ffd700;
+  border-bottom: 10px solid #ffd700;
 }
+
 
 @keyframes ring {
   0%{
-    transform: rotate(0deg);
-    
+    transform: rotate(0deg);  
   }
+  
   50%{
     transform: rotate(180deg);
   }
@@ -62,20 +64,19 @@ color: #111;
   border-radius: 50%;
   }
   
+  
+  
+  
 .span{
-  color: #ffd700;
-  font-size: 100px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  line-height: 200px;
-  animation: text 3s ease-in-out infinite;
- 
+    animation: text 3s ease-in-out infinite;
 }
 @keyframes text {
   50%{
     color: #ffd700;
   }
 }
+
+
 
 .center{
   display: flex;
@@ -100,8 +101,9 @@ transform:translate(-50%,-50%);
 height: auto;
 width: 235px; 
 border-radius:20px;
-}
+animation: text 3s ease-in-out infinite;
 
+}
 
 
 
@@ -232,7 +234,7 @@ border: none;
 opacity: 0.6;
 width: 100px;
  height: 100px;
- object-fit: fill;
+ object-fit: cover;
 }
 
 .active1, .images:hover {
@@ -691,7 +693,7 @@ background-image: linear-gradient(red, red),
  background-repeat: no-repeat;
  background-size: 5px 50%, 50% 5px, 5px 50%, 50% 5px, calc(100% - 5px) calc(100% - 5px);
  background-position: left bottom, left bottom, right top, right top, 4px 4px;
- background-color:#242424;
+ background-color:#fff;
 
 }
 
@@ -706,6 +708,7 @@ background-image: linear-gradient(red, red),
  text-align: center;
  color: #fff;
 }
+
 
 .centered {
  position: absolute;
@@ -725,10 +728,11 @@ background-image: linear-gradient(red, red),
  transform: translate(-50%, -50%);
  font-size: 20px;
  font-weight: 700;
- color: #fff;
+ color: #fff; 
  text-shadow: 0 2px red , 0 2px red; 
  background: rgba(0, 0, 0, 0.5);
  padding: 10px;
+ 
  
 }
 
@@ -844,7 +848,7 @@ margin: auto;
 .cardss {
  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.50);
  max-width: 300px;
- margin:10px 20px;
+ margin: 10px 30px;
  text-align: center;
  font-family: arial;
  background:linear-gradient(to right,red,#ffd700);
@@ -891,7 +895,7 @@ margin: 10px;
 
 .card-con{
  max-width: 1200px;
- margin: 15px;
+ margin: 15px auto;
  display: grid;
  gap: 1rem;
  }
