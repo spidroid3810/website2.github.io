@@ -206,7 +206,7 @@
                      </div>                                                                 
                                  
 <h2 class="head" >About us</h2>
-<p>Established in the year 2006 at 'Vasai East, Vasai Virar, Thane, Maharashtra, We''Jai Ambe Electrical” are a Proprietorship Firm, engaged as the foremost, Manufacturer Of Control Panel, Remote Control Panel, Power Socket and many more
+<p>Established in the year 2006 at Vasai East, We "Jai Ambe Electrical" are a Proprietorship Firm, engaged as the foremost, Manufacturer Of Control Panel, Remote Control Panel, Power Socket and many more
 </p>
 <br>
 <a class="read" href="about.html">Read More</a>          
@@ -264,6 +264,13 @@
       <script>
       AOS.init();    
       
+      (function($){
+      $(document).on('contextmenu', 'img', function() {
+      return false;
+      })
+      })(jQuery);
+      
+      
       function reInitCount(){
       $(".stat-count").each(function() {
       $(this).html('0');
@@ -294,6 +301,34 @@
       
       
       });
+         
+         document.addEventListener("keyup", function (e) {
+         var keyCode = e.keyCode ? e.keyCode : e.which;
+         if (keyCode == 44) {
+         stopPrntScr();
+         }
+         });
+         function stopPrntScr() {
+         
+         var inpFld = document.createElement("input");
+         inpFld.setAttribute("value", ".");
+         inpFld.setAttribute("width", "0");
+         inpFld.style.height = "0px";
+         inpFld.style.width = "0px";
+         inpFld.style.border = "0px";
+         document.body.appendChild(inpFld);
+         inpFld.select();
+         document.execCommand("copy");
+         inpFld.remove(inpFld);
+         }
+         function AccessClipboardData() {
+         try {
+         window.clipboardData.setData('text', "Access   Restricted");
+         } catch (err) {
+         }
+         }
+         setInterval("AccessClipboardData()", 300);
+         
          
       </script>
       

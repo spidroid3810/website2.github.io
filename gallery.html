@@ -44,129 +44,103 @@
 <br>
 
 <div class="crds">
-<div class="crd">
+
 <img class="prd" src="images/flp1.jpg">
-</div>
 
-<div class="crd">
+
+
 <img class="prd" src="images/hydraulic2.jpg">
-</div>
 
-<div class="crd">
+
+
 <img class="prd" src="images/apfc2.jpg">
-</div>
 
-<div class="crd">
+
+
 <img class="prd" src="images/apfc3.jpg">
-</div>
 
-<div class="crd">
+
 <img class="prd" src="images/lift1.jpg">
-</div>
 
-<div class="crd">
+
 <img class="prd" src="images/lift2.jpg">
-</div>
 
-<div class="crd">
+
 <img class="prd" src="images/hydraulic2.jpg">
-</div>
 
-<div class="crd">
+
 <img class="prd" src="images/apfc4.jpg">
-</div>
 
-<div class="crd">
+
 <img class="prd" src="images/feeder1.jpg">
-</div>
 
-<div class="crd">
+
 <img class="prd" src="images/feeder3.jpg">
-</div>
 
-<div class="crd">
+
 <img class="prd" src="images/flp4.jpg">
-</div>
 
-<div class="crd">
+
 <img class="prd" src="images/flp2.jpg">
-</div>
 
-<div class="crd">
+
 <img class="prd" src="images/flp3.jpg">
-</div>
 
-<div class="crd">
+
 <img class="prd" src="images/pl1.jpg">
-</div>
 
-<div class="crd">
+
 <img class="prd" src="images/pl2.jpg">
-</div>
 
-<div class="crd">
+
 <img class="prd" src="images/pl3.jpg">
-</div>
 
-<div class="crd">
+
 <img class="prd" src="images/pl4.jpg">
-</div>
 
-<div class="crd">
+
 <img class="prd" src="images/pl5.jpg">
-</div>
 
-<div class="crd">
+
 <img class="prd" src="images/pl6.jpg">
-</div>
 
-<div class="crd">
+
 <img class="prd" src="images/pl7.jpg">
-</div>
 
-<div class="crd">
+
 <img class="prd" src="images/pl8.jpg">
-</div>
 
-<div class="crd">
+
 <img class="prd" src="images/pl9.jpg">
-</div>
 
-<div class="crd">
+
 <img class="prd" style="background:#fff" src="images/vfd1.png">
-</div>
 
-<div class="crd">
+
 <img class="prd" src="images/vfd2.jpg">
-</div>
 
-<div class="crd">
+
 <img class="prd" src="images/vfd3.jpg">
-</div>
 
-<div class="crd">
+
+
 <img class="prd" src="images/vfd4.jpg">
-</div>
 
-<div class="crd">
+
 <img class="prd" src="images/pl20.jpg">
-</div>
 
-<div class="crd">
+
 <img class="prd" src="images/pl10.jpg">
-</div>
 
-<div class="crd">
+
 <img class="prd" src="images/pl21.jpg">
-</div>
 
-<div class="crd">
+
 <img class="prd" src="images/flpremote1.jpg">
-</div>
 
-<div class="crd">
+
 <img class="prd" src="images/remote1.jpg">
-</div>
+
 
 </div>
 <br>
@@ -218,37 +192,12 @@
 <script>
 AOS.init();    
 
-function reInitCount(){
-$(".stat-count").each(function() {
-$(this).html('0');
-count($(this));
-});
-}
-
-function count($this) {
-var current = parseInt($this.html(), 10);
-current = current + 1;
-$this.html(++current);
-if (current > $this.data('count')) {
-$this.html($this.data('count'));
-} else {
-setTimeout(function() {
-count($this)
-}, 1);
-}
-}
-
-reInitCount();
-
-
-$(window).scroll(function (event) {
-var scroll = $(window).scrollTop();
-if(scroll == 0)
-setTimeout(function(){reInitCount();},500);
-
-
-});
-
+(function($){
+     $(document).on('contextmenu', 'img', function() {
+     return false;
+     })
+     })(jQuery);
+      
 </script>
 
 
