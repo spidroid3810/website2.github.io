@@ -104,37 +104,13 @@ A feeder pillar, also known as a power box, a distribution pillar, or a feeder p
       <script>
       AOS.init();    
       
-      function reInitCount(){
-      $(".stat-count").each(function() {
-      $(this).html('0');
-      count($(this));
-      });
-      }
-      
-      function count($this) {
-      var current = parseInt($this.html(), 10);
-      current = current + 1;
-      $this.html(++current);
-      if (current > $this.data('count')) {
-      $this.html($this.data('count'));
-      } else {
-      setTimeout(function() {
-      count($this)
-      }, 1);
-      }
-      }
-      
-      reInitCount();
-      
-      
-      $(window).scroll(function (event) {
-      var scroll = $(window).scrollTop();
-      if(scroll == 0)
-      setTimeout(function(){reInitCount();},500);
-      
-      
-      });
-      
+        (function($){
+        $(document).on('contextmenu', 'img', function() {
+        return false;
+        })
+        })(jQuery);
+        
+        
       var header = document.getElementById("myImg");
       var btns = header.getElementsByClassName("images");
       for (var i = 0; i < btns.length; i++) {
